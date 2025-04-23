@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <title>QR Code 產生器</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        padding: 2rem;
+        background-color: #f9f9f9;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      #content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px; /* 中間空 16px */
+        align-items: center; /* 讓內容置中 */
+      }
+      input {
+        width: 50%;
+        padding: 8px;
+        font-size: 1rem;
+      }
+      button {
+        width: 50%;
+        padding: 8px;
+        font-size: 1rem;
+      }
+      #qrcode {
+        margin-top: 2px;
+      }
+      #showText {
+        margin-top: 20px;
+      }
+      footer {
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+        color: #777;
+        margin-top: 2rem;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      body > footer {
+        margin-top: auto;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" crossorigin src="/assets/index-CnJLhLO5.js"></script>
+  </head>
+  <body>
+    <h1>文字轉 QR Code</h1>
+    <div id="content">
+      <input id="textInput" placeholder="請輸入文字…" />
+      <button id="convert">生成！</button>
+      <h2 id="showText"></h2>
+      <div id="qrcode"></div>
+    </div>
+  </body>
+  <footer>
+    <p>P ❤️ P </p>
+  </footer>
+</html>
